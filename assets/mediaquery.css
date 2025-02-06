@@ -375,7 +375,7 @@
   } */
 
   .logo {
-    margin-top: 18px;
+    margin-top: 15px;
     margin-left: 60px;
     width: 40px; 
     height: auto;
@@ -866,12 +866,10 @@
       gap: 8px;
       padding-left: 10px;
   }
-  
   .tab span {
       font-size: 15px;
       font-weight: 600;
   }
-  
   .tab {
     display: flex;
     flex-flow: row;
@@ -884,7 +882,7 @@
     color: #333333;
     padding: 8px 8px 6px 8px;
     border-radius: 16px 16px 0px 0px;
-    opacity: 1; /* Make sure opacity is visible */
+    opacity: 1; 
 }
   .header h1 {
     font-size: 14px;
@@ -922,20 +920,16 @@
     width: 100%;
     margin-bottom: 0px;
   }
-
-
   .input-group {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-bottom: 20px;
   }
-
   .input-group input,
   .input-group select {
     padding: 10px;
   }
-
   .input-group label {
     font-size: 14px;
     padding-top: 10px;
@@ -1054,18 +1048,20 @@
     display: flex;
     padding: 11px 30px; 
     font-size: 11px;
+    color: #0219E3;
+  border: 2px solid #0219E3;
   }
 
   #apply-button {
     background-color: transparent;
-    border: white solid 2px;
-    color: white;
+    border: #0219E3 solid 2px;
+    color: #031191;
     margin-left: 20px;
   }
 
   #apply-button2 {
     background-color: white;
-    border: white solid 2px;
+    border: #0219E3 solid 2px;
   }
 
   .footer {
@@ -1077,26 +1073,26 @@
     font-size: 18px;
     border-radius: 35px;
   }
-  .save-btn {
+  /* .save-btn {
     background: radial-gradient(
       rgba(255, 255, 255, 0.5) 50%,
       rgba(2, 25, 227, 0.5) 100%
     );
-  }
+  } */
 
-  .confirm-btn {
+  /* .confirm-btn {
     background: radial-gradient(
       rgba(255, 255, 255, 0.5) 50%,
       rgba(2, 25, 227, 0.5) 100%
     );
-  }
+  } */
 
-  .other-btn {
+  /* .other-btn {
     background: radial-gradient(
       rgba(255, 255, 255, 0.5) 50%,
       rgba(2, 25, 227, 0.5) 100%
     );
-  }
+  } */
 
   .tablewidth {
     overflow: scroll;
@@ -1225,7 +1221,7 @@
   .footerresponsive .save-btn,
   .footerresponsive .confirm-btn,
   .footerresponsive .other-btn {
-    padding: 8px 12px; 
+    padding: 12px 12px; 
     text-align: center; 
     flex: 0 1 auto; 
   }
@@ -1537,7 +1533,9 @@
   .row{
     gap: initial;
   }
-
+.extrabtn{
+  display: none;
+}
 
 }
 @media only screen and (max-width: 768px) {
@@ -1685,7 +1683,7 @@
 @media (min-width: 1024px) {
   #sidebar-icon {
     position: relative;
-    /* top: 105%; */
+    /* top: 36%; */
     width: 38px;
     border-radius: 9px;
     left: 15px;
@@ -1702,7 +1700,7 @@
 @media (min-width: 1440px) {
   #sidebar-icon {
     position: relative;
-    /* top: 72%;  */
+    /* top: 33%;  */
     width: 38px;
     border-radius: 9px;
     left: 15px;

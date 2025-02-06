@@ -16,14 +16,14 @@ html {
   display: flex;
   height: 57%;
   backdrop-filter: blur(150px);
-  background: #031191;
+  /* background: #031191; */
 }
-/* Sidebar base styles */
+
 .sidebar {
   width: 259px;
   height: 100%;
   position: relative;
-  background: #031191;
+  /* background: #031191; */
 }
 .sidebar.closed {
   width: 80px;
@@ -37,7 +37,7 @@ html {
 }
 #sidebar-icon {
   position: absolute;
-  /* top: 97.5%; */
+  top: 97.5%;
   left: 8px;
   transform: translateY(-50%);
   background-color: white;
@@ -65,7 +65,7 @@ html {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
 }
 
 .icon {
@@ -173,7 +173,7 @@ html {
 }
 .nested-sub-nav {
   width: 250px;
-  background: #031191;
+  background: #1d2783;
 }
 
 .nested-sub-nav li {
@@ -250,7 +250,7 @@ html {
 
 #master.active {
   color: white;
-  background-color: #031191;
+  background-color: #9092a899;
 }
 
 /* Styles for nested submenu */
@@ -259,6 +259,7 @@ html {
   display: flex;
   flex-direction: column;
   width: 230px;
+  /* background-color: #CCD1F999; */
 }
 
 .submenu-header {
@@ -358,6 +359,7 @@ html {
   align-items: center;
   font-size: 14px;
   color: #333;
+  padding-left: 10px;
 }
 
 .breadcrumb i {
@@ -580,7 +582,17 @@ button {
   cursor: pointer;
   font-weight: 700;
 }
-
+.butnspan{
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+  padding: 0px 12px;
+  border-radius: 7px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 700;
+}
 .apply-btn {
   border-image-source: linear-gradient(
     92.93deg,
@@ -844,7 +856,7 @@ td input[type="radio"]:checked::before {
 #master.active .ffff {
   height: 40px;
   text-align: center;
-  background-color: #ccd1f999;
+  background-color: rgba(204, 209, 249, 0.6);
   color: white;
   width: 230px;
 }
@@ -881,6 +893,7 @@ td input[type="radio"]:checked::before {
   background-color: transparent;
   border-radius: 5px;
   gap: 10px;
+  padding-left: 15px;
   /* width: 100%; */
 }
 
@@ -1030,6 +1043,7 @@ div[style*="overflow"] {
   z-index: 999;
   padding: 20px;
   display: flex;
+  padding-top:60px ;
 }
 
 #filter-button {
@@ -1149,24 +1163,23 @@ td {
   line-height: 20px;
 }
 
-.filter-dropdown {
+ /* .filter-dropdown {
   position: relative;
   margin: 20px 0;
-}
+} */
 
 .filter-btn {
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  background-color: white;
-  border: 1px solid #ddd;
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
+  padding-top: 15px;
 }
 
-.filter-btn i {
+/*.filter-btn i {
   font-size: 14px;
 }
 
@@ -1175,7 +1188,7 @@ td {
   width: 100%;
   background-color: white;
   border-radius: 4px;
-  margin-bottom: 20px; /* Add space between dropdown and table */
+  margin-bottom: 20px; 
 }
 .dropdown-content.show {
   display: block;
@@ -1183,7 +1196,7 @@ td {
 
 .dropdown-containers > div:last-child {
   border-bottom: none;
-}
+} */
 /* Add transition for smooth movement */
 .tablewidth {
   transition: all 0.3s ease;
